@@ -27,37 +27,86 @@
 </head>
 
 <body>
-        <!-- header section -->
-    <header class="max-w-screen-xl mx-auto px-5 lg:pl-28 lg:pr-8 mb-7 lg:mb-28 flex flex-col lg:flex-row gap-5 pt-5 md:pt-10">
-                <!-- text content -->
-                <div class="">
-                    <h1 class="text-5xl md:text-7xl text-[#1C1C1C] font-bold">It's good <br> tea time at The <br> Tea House</h1>
-                    <br>
-                    <p class="text-[#777777] text-lg w-full sm:w-3/4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-                    <br>
-                    <button class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white text-xl px-5 py-3 rounded-lg font-semibold">Explore More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+    <!-- header section -->
+    <header
+        class="max-w-screen-xl mx-auto px-5 sm:px-8 md:px-12 lg:pl-28 lg:pr-8 mb-7 lg:mb-20 flex flex-col lg:flex-row gap-5 pt-5 md:pt-10">
+        <!-- text content -->
+        <div class="">
+            <h1 class="text-5xl md:text-7xl text-[#1C1C1C] font-bold">It's good <br> tea time at The <br> Tea House</h1>
+            <br>
+            <p class="text-[#777777] text-lg w-full sm:w-3/4">Tea and Botanical Solutions Supplier Give Optimum
+                Satisfaction To Your Taste Buds.</p>
+            <br>
+            <button
+                class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white text-xl px-5 py-3 rounded-lg font-semibold">Explore
+                More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
+        </div>
+        <!-- image content -->
+        <div class="relative">
+            <!-- image -->
+            <div>
+                <img class="w-full" src="./images/banner.png" alt="">
+            </div>
+            <!-- card -->
+            <div
+                class="absolute flex items-center bg-white shadow-lg px-2 py-2 md:px-6 lg:py-4 rounded-lg top-28 md:top-80 md:left-32 lg:left-20">
+                <!-- icon -->
+                <div><i class="fa-solid fa-star text-2xl text-[#FFC850]"></i></div>
+                <!-- text -->
+                <div class="ml-2">
+                    <h2 class="lg:text-2xl font-bold">5.00</h2>
+                    <p class="text-[#777777]">Trust Pilot Ratings</p>
                 </div>
-                <!-- image content -->
-                <div class="relative">
-                    <!-- image -->
-                     <div>
-                        <img class="w-full" src="./images/banner.png" alt="">
-                     </div>
-                     <!-- card -->
-                      <div class="absolute flex items-center bg-white shadow-lg px-2 py-2 md:px-6 lg:py-4 rounded-lg top-28 md:top-80 md:left-32 lg:left-20">
-                        <!-- icon -->
-                         <div><i class="fa-solid fa-star text-2xl text-[#FFC850]"></i></div>
-                        <!-- text -->
-                         <div class="ml-2">
-                            <h2 class="lg:text-2xl font-bold">5.00</h2>
-                            <p class="text-[#777777]">Trust Pilot Ratings</p>
-                         </div>
-                      </div>
-                </div>
+            </div>
+        </div>
     </header>
-        <!-- main-content -->
-    <main class="max-w-screen-xl mx-auto px-16 lg:px-28 mb-7 lg:mb-28">
-
+    <!-- main-content -->
+    <main class="max-w-screen-xl mx-auto px-5 sm:px-8 md:px-12 lg:px-28 mb-7 lg:mb-28">
+        <!-- featured product section -->
+        <section>
+            <!-- title -->
+            <div class="text-center mb-5 sm:mb-10">
+                <h1 class="text-4xl font-bold mb-5 w-3/4 sm:w-full mx-auto">Our Featured Products</h1>
+                <p class="text-[#777777] w-full md:w-3/4 mx-auto">There are many variations of passages of Lorem Ipsum available,
+                    but the majority have suffered alteration in some form, by injected humour, or randomised words
+                    which don't look even slightly believable. </p>
+            </div>
+            <!-- grid card -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-6 text-center">
+                <!-- product card -->
+                <div class="rounded-lg shadow-md bg-gradient-to-b from-gray-50 to-white">
+                    <img class="mx-auto pt-4" src="./images/tea-1.png" alt="">
+                    <div class="p-4">
+                        <h2 class="text-2xl font-bold">Green Tea</h2>
+                        <p class="text-[#777777]">Creamer could be <br> replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- product card -->
+                <div class="rounded-lg shadow-md bg-gradient-to-b from-gray-50 to-white">
+                    <img class="mx-auto pt-4" src="./images/tea-2.png" alt="">
+                    <div class="p-4">
+                        <h2 class="text-2xl font-bold">Milk Tea</h2>
+                        <p class="text-[#777777]">Creamer could be <br> replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- product card -->
+                <div class="rounded-lg shadow-md bg-gradient-to-b from-gray-50 to-white">
+                    <img class="mx-auto pt-4" src="./images/tea-3.png" alt="">
+                    <div class="p-4">
+                        <h2 class="text-2xl font-bold">Black Tea</h2>
+                        <p class="text-[#777777]">Creamer could be <br> replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- product card -->
+                <div class="rounded-lg shadow-md bg-gradient-to-b from-gray-50 to-white">
+                    <img class="mx-auto pt-4" src="./images/tea-4.png" alt="">
+                    <div class="p-4">
+                        <h2 class="text-2xl font-bold">Lemon Tea</h2>
+                        <p class="text-[#777777]">Creamer could be <br> replaced by fresh milk</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
