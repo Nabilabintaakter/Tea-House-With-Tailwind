@@ -9,8 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+
     <!-- Font-awesome cdn -->
     <script src="https://kit.fontawesome.com/5d47224317.js" crossorigin="anonymous"></script>
+
     <!-- Tailwind cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -24,14 +30,42 @@
             }
         }
     </script>
+    <style>
+        .font-base {
+            font-family: "Manrope", sans-serif;
+            }
+        .font-secondary{
+            font-family: "Merriweather", serif;
+            }
+    </style>
 </head>
 
 <body>
     <!-- header section -->
-    <header
-        class="max-w-screen-xl mx-auto px-5 sm:px-8 md:px-12 lg:pl-28 lg:pr-5 mb-7 lg:mb-20 flex flex-col lg:flex-row gap-5 pt-5 md:pt-10">
-        <!-- text content -->
-        <div class="">
+    <header>
+        <!-- navbar section -->
+        <nav class="max-w-screen-2xl mx-auto h-12 md:h-16 bg-green-700 px-5 md:px-16 lg:px-32 font-secondary flex justify-between items-center ">
+            <div class="md:hidden"><i class="fa-solid fa-bars text-2xl text-white cursor-pointer"></i></div>
+            <div class="flex items-center gap-2 text-2xl md:text-3xl lg:text-4xl">
+                <i class="fa-solid fa-leaf text-green-400"></i> 
+                <h1 class=""><span class=" text-green-400 font-bold">TEA</span><span class=" text-white font-bold">-HOUSE</span></h1>
+            </div>
+            <div class="md:hidden"><i class="fa-solid fa-magnifying-glass text-2xl text-white cursor-pointer"></i></div>
+            <div class="hidden md:block">
+                <ul class="flex items-center md:gap-5 lg:gap-8 text-white text-xs">
+                    <li class="text-green-400"><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">PRODUCTS</a></li>
+                    <li><a href="">STORE</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href=""><i class="fa-solid fa-magnifying-glass cursor-pointer"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- banner section -->
+        <div class="max-w-screen-xl mx-auto px-5 sm:px-8 md:px-12 lg:pl-28 lg:pr-5 mb-7 lg:mb-20 flex flex-col lg:flex-row gap-5 pt-5 md:pt-10">
+            <!-- text content -->
+            <div>
             <h1 class="text-5xl md:text-7xl text-[#1C1C1C] font-extrabold">It's good <br> tea time at The <br> Tea House</h1>
             <br>
             <p class="text-[#777777] text-lg w-full sm:w-3/4">Tea and Botanical Solutions Supplier Give Optimum
@@ -40,9 +74,9 @@
             <button
                 class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white text-xl px-5 py-3 rounded-lg font-semibold">Explore
                 More <i class="fa-solid fa-arrow-right -rotate-45"></i></button>
-        </div>
-        <!-- image content -->
-        <div class="relative">
+            </div>
+            <!-- image content -->
+            <div class="relative">
             <!-- image -->
             <div>
                 <img class="w-full" src="./images/banner.png" alt="">
@@ -58,6 +92,7 @@
                     <p class="text-[#777777]">Trust Pilot Ratings</p>
                 </div>
             </div>
+        </div>
         </div>
     </header>
     <!-- main-content -->
